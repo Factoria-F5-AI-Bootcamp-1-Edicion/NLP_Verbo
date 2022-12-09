@@ -49,6 +49,9 @@ lottie_download = load_lottieurl(lottie_url_download)
 lottie_transition1 = load_lottieurl(lottie_url_transition1)
 lottie_predict = load_lottieurl(lottie_url_predict)
 
+# FastAPI endpoint
+url = 'http://fastapi:8008/predict/?'
+
 #MENU 
 # Funcion para reducir el margen top
 def margin(): 
@@ -117,7 +120,7 @@ if selected == "Home":
 
 if selected== "Prediction":
     margin()
-    st.markdown("<h1 style='text-align: center; color: purple;'>Ingresa el comentario a clasificar en la cajita de abajo</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: purple;'>Ingresa el comentario a clasificar en la cajita de abajo.</h1>", unsafe_allow_html=True)
 
     st_lottie(lottie_predict, key="predict",
         speed=1,
@@ -131,7 +134,7 @@ if selected== "Prediction":
 
 
 
-    txt = st.text_area('Aqui va tu comentario para clasificar', '''
+    txt = st.text_area('Introduce aqui tu comentario para clasificar', '''
     It was the best of times, it was the worst of times, it was
     the age of wisdom, it was the age of foolishness, it was
     the epoch of belief, it was the epoch of incredulity, it
@@ -139,13 +142,6 @@ if selected== "Prediction":
     was the spring of hope, it was the winter of despair, (...)
     ''')
 
-
-    
-    
- 
-    
-    
-    
 
 
     if st.button("Predict"):
