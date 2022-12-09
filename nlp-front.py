@@ -1,31 +1,9 @@
-from enum import auto
+#Importación librerias
 import streamlit as st
-import pandas as pd
 import warnings
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import r2_score
-from sklearn.metrics import recall_score
-from sklearn.metrics import precision_score
-from sklearn.metrics import confusion_matrix
 from streamlit_option_menu import option_menu
-import pickle
-#from streamlit_option_menu import option_menu
-import time
 import requests
-
-
-import streamlit as st
 from streamlit_lottie import st_lottie
-from streamlit_lottie import st_lottie_spinner
-
-
-import streamlit as st
-from streamlit_lottie import st_lottie
-from streamlit_lottie import st_lottie_spinner
-
-from xgboost import XGBClassifier
 
 
 warnings.filterwarnings("ignore")
@@ -38,15 +16,8 @@ def load_lottieurl(url: str):
     return r.json()
 
 
-lottie_url_hello = "https://assets7.lottiefiles.com/packages/lf20_3vbOcw.json"
-lottie_url_download = "https://assets10.lottiefiles.com/packages/lf20_q56zavhf.json"
-lottie_url_transition1= "https://assets10.lottiefiles.com/temp/lf20_tXDjQg.json"
-lottie_url_home = "https://assets10.lottiefiles.com/packages/lf20_xgdvjjxc.json"
 lottie_url_predict = "https://assets7.lottiefiles.com/packages/lf20_feesoomz.json"
-lottie_hello = load_lottieurl(lottie_url_hello)
-lottie_home = load_lottieurl(lottie_url_home)
-lottie_download = load_lottieurl(lottie_url_download)
-lottie_transition1 = load_lottieurl(lottie_url_transition1)
+
 lottie_predict = load_lottieurl(lottie_url_predict)
 
 # FastAPI endpoint
