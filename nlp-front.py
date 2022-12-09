@@ -86,8 +86,8 @@ def streamlit_menu(example=1):
         with st.sidebar:
             
             selected = option_menu(
-                menu_title="Menu",  # required
-                options=["Home", "Prediction",],  # required
+                menu_title="Menú",  # required
+                options=["Página principal", "Aplicación",],  # required
                 icons=["house","clipboard-plus",],  # optional
                 #menu_icon= "cast",  # optional
                 default_index=0,  # optional
@@ -105,12 +105,24 @@ def streamlit_menu(example=1):
 selected = streamlit_menu(example=EXAMPLE_NO)
 
 
-if selected == "Home":
-
-    st.markdown("<h1 style='text-align: center; color: purple;'>DeepIA Tech</h1>", unsafe_allow_html=True)
+if selected == "Página principal":
     
 
-    st.image("Healthy.png")
+
+    st.markdown("<h1 style='text-align: center; color: purple;'>DeepIA Tech</h1>", unsafe_allow_html=True)
+   
+    container = st.container()
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.write(' ')
+
+    with col2:
+        st.image("Healthy.png")
+
+    with col3:
+        st.write(' ')
+    #container.image("Healthy.png")
     
     st.markdown("<h5 style='text-align: justify; color: black;'>DeepIA Tech es una consultoría en la que nos encargamos de buscar soluciones tecnológicas. Nuestro equipo está conformado por data analystics, desarrolladores y desarrolladoras de Inteligencia Artificial, especialistas en marketing y diseño web.</h5>", unsafe_allow_html=True)
     st.markdown("<h5 style='text-align: justify; color: black;'>Así nace Healthy Comments es una aplicación para el análisis de comentarios, como en las redes sociales, que nos ayuda a identificar si son tóxicos o no, utilizando Machine Learning. Queremos seguir desarrollando nuestra herramienta  para que sea mas polivalente e incluso llegar a poder restringir de manera automática los comentarios nocivos hacia otras personas.</h5>", unsafe_allow_html=True)
@@ -118,7 +130,7 @@ if selected == "Home":
 
 
 
-if selected== "Prediction":
+if selected== "Aplicación":
     margin()
     st.markdown("<h1 style='text-align: center; color: purple;'>Ingresa el comentario a clasificar en la cajita de abajo.</h1>", unsafe_allow_html=True)
 
@@ -134,28 +146,17 @@ if selected== "Prediction":
 
 
 
-    txt = st.text_area('Introduce aqui tu comentario para clasificar', '''
-    It was the best of times, it was the worst of times, it was
-    the age of wisdom, it was the age of foolishness, it was
-    the epoch of belief, it was the epoch of incredulity, it
-    was the season of Light, it was the season of Darkness, it
-    was the spring of hope, it was the winter of despair, (...)
-    ''')
+    form = st.form("my_form")
+    prompt = form.text_input("Inserta tu comentario aquí:")
 
 
+        # Now add a submit button to the form:
+    if form.form_submit_button("Mostrar resultado"):
+        request_text = f"http://127.0.0.1:8000/predict?prompt=${prompt}"
+        response = requests.get(request_text, json=prompt)
+        prediction = response.text
+        st.success(f"El resultado de tu comentario es: {prediction}")
 
-    if st.button("Predict"):
-        
-            
-        with st_lottie_spinner(lottie_download, key="download"):
-            time.sleep(4)
-            
-            
-
-            st.write("Stroke Probability", 
-                str(round(predict[0][1],2)) , " %" )
-            
-            
 
     
 
