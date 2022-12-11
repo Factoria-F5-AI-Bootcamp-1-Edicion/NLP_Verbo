@@ -16,7 +16,7 @@ def load_lottieurl(url: str):
     return r.json()
 
 
-lottie_url_predict = "https://assets7.lottiefiles.com/packages/lf20_feesoomz.json"
+lottie_url_predict = "https://assets8.lottiefiles.com/packages/lf20_D0HSc9DlfZ.json"
 
 lottie_predict = load_lottieurl(lottie_url_predict)
 
@@ -58,8 +58,8 @@ def streamlit_menu(example=1):
             
             selected = option_menu(
                 menu_title="Menú",  # required
-                options=["Página principal", "Aplicación",],  # required
-                icons=["house","clipboard-plus",],  # optional
+                options=["Página principal","Prediccion",],  # required
+                icons=["house", "heart",],  # optional
                 #menu_icon= "cast",  # optional
                 default_index=0,  # optional
                 styles={
@@ -78,8 +78,6 @@ selected = streamlit_menu(example=EXAMPLE_NO)
 
 if selected == "Página principal":
     
-
-
     st.markdown("<h1 style='text-align: center; color: purple;'>DeepIA Tech</h1>", unsafe_allow_html=True)
    
     container = st.container()
@@ -95,27 +93,60 @@ if selected == "Página principal":
         st.write(' ')
     #container.image("Healthy.png")
     
-    st.markdown("<h5 style='text-align: justify; color: black;'>DeepIA Tech es una consultoría en la que nos encargamos de buscar soluciones tecnológicas. Nuestro equipo está conformado por data analystics, desarrolladores y desarrolladoras de Inteligencia Artificial, especialistas en marketing y diseño web.</h5>", unsafe_allow_html=True)
-    st.markdown("<h5 style='text-align: justify; color: black;'>Así nace Healthy Comments es una aplicación para el análisis de comentarios, como en las redes sociales, que nos ayuda a identificar si son tóxicos o no, utilizando Machine Learning. Queremos seguir desarrollando nuestra herramienta  para que sea mas polivalente e incluso llegar a poder restringir de manera automática los comentarios nocivos hacia otras personas.</h5>", unsafe_allow_html=True)
-    st.markdown("<h5 style='text-align: justify; color: black;'>Contamos con soporte técnico que ayuda a mantener la herramienta de forma constante y ofrecemos capacitación a las empresas.</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: justify; color: black;'>DeepIA Tech es una consultoría en la que nos encargamos de buscar soluciones tecnológicas. Nuestro equipo está conformado por data analystics, desarrolladores de Inteligencia Artificial y especialistas en marketing y diseño web.</h5>", unsafe_allow_html=True)
+
+    st.markdown("  ")
+    st.markdown("  ")
+    st.markdown("  ")
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+       st.image("/sysroot/home/andreasandoval/Documentos/BOOTCAMP_F5/Verbo/NLP_Verbo/twiter_logo.png")
+
+    with col2:
+       st.image("/sysroot/home/andreasandoval/Documentos/BOOTCAMP_F5/Verbo/NLP_Verbo/instagram_logo.png")
+
+    with col3:
+       st.image("/sysroot/home/andreasandoval/Documentos/BOOTCAMP_F5/Verbo/NLP_Verbo/youtube_logo.png")
+
+    st.markdown("  ")
+    st.markdown("  ")
+    st.markdown("  ")
+
+    st.markdown("<h5 style='text-align: justify'>Así nace Healthy Comments es una aplicación para el análisis de comentarios, como en las redes sociales, que nos ayuda a identificar si son tóxicos o no, utilizando Machine Learning. Queremos seguir desarrollando nuestra herramienta  para que sea mas polivalente e incluso llegar a poder restringir de manera automática los comentarios nocivos hacia otras personas.</h5>", unsafe_allow_html=True)
+    st.markdown("<h5 style='text-align: justify'>Contamos con soporte técnico que ayuda a mantener la herramienta de forma constante y ofrecemos capacitación a las empresas.</h5>", unsafe_allow_html=True)
+
+    st.markdown("  ")
+    st.markdown("  ")
+    st.markdown("  ")
+    st.image("/sysroot/home/andreasandoval/Documentos/BOOTCAMP_F5/Verbo/NLP_Verbo/BigML-Dataset.png")
 
 
-
-if selected== "Aplicación":
+if selected== "Prediccion":
     margin()
-    st.markdown("<h1 style='text-align: center; color: purple;'>Ingresa el comentario a clasificar en la cajita de abajo.</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center; color: skyblue;'>Healthy comments</h1>", unsafe_allow_html=True)
 
-    st_lottie(lottie_predict, key="predict",
-        speed=1,
-        reverse=False,
+    container = st.container()
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.write(' ')
+
+    with col2:
+
+        st_lottie(lottie_predict, key="predict",
+        speed=2,
+        reverse=True,
         loop=True,
         quality="low", # medium ; high
         
-        height=None,
-        width=None,
+        height=200,
+        width=200,
         ) 
 
-
+    with col3:
+        st.write(' ')
 
     form = st.form("my_form")
     prompt = form.text_input("Inserta tu comentario aquí:")
