@@ -77,7 +77,7 @@ selected = streamlit_menu(example=EXAMPLE_NO)
 
 
 if selected == "Página principal":
-    
+
     st.markdown("<h1 style='text-align: center; color: purple;'>DeepIA Tech</h1>", unsafe_allow_html=True)
    
     container = st.container()
