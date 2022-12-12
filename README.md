@@ -18,9 +18,9 @@ Proyecto de NLP para analizar comentarios de Youtube y verificar si contienen me
 
 ## Métricas del Modelo 👾
 
-<center>
+<p align = "center">
 	 <img src="https://user-images.githubusercontent.com/74676901/207124917-e5ed968c-9ab6-4401-a826-fcbc6da64ae2.png" alt="matriz confusion" height=”500”       width=500”>
-</center>
+</p>
 
 
 
