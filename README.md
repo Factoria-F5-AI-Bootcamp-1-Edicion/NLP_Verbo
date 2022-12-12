@@ -1,9 +1,11 @@
-# HEALTHY COMMENTS
+<h1 align ="center"> DeePIA Consulting Agency </h1>
 
-<center>
-	 <img src="https://user-images.githubusercontent.com/97572313/207034036-317dd14a-0c5d-4fd6-993d-9bf6a0c07afa.png" alt="logo proyecto" height=”500”       width=500” style= "text-align: center"> 
+<h2 align="center"> Present </h2>
+
+<p align = "center">
+	 <img src="https://user-images.githubusercontent.com/97572313/207034036-317dd14a-0c5d-4fd6-993d-9bf6a0c07afa.png" alt="logo proyecto" height=”600”       width=600” style= "text-align: center"> 
    
-</center>
+</p>
 
 ## Introducción 🔮
 
