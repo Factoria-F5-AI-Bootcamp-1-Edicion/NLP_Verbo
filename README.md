@@ -1,18 +1,18 @@
 # NLP_Verbo
 # HEALTHY COMMENTS
-![LOGOTIPO](https://drive.google.com/drive/u/0/folders/18oW948tloIAlsfdfASSulDf75spIK6l5)
+![healthy_comments](https://user-images.githubusercontent.com/97572313/207034036-317dd14a-0c5d-4fd6-993d-9bf6a0c07afa.png)
 
 ## Introducción 🔮
 
 proyecto de NLP para analizar comentarios de youtube y verificar si contienen mensajes de odio 📡 💣 utilizando un el modelo xgboost de machine learning sobre una API y un FRONT en Streamlit.
 
 ## Instalación  💻 
-instalar el requiremenst.txt
-correr la API con uvicorn api:app --reload
-ejecutar la con "streamlit run nlp-front.py" 
+Instalar el requiremenst.txt  
+Correr la API con uvicorn api:app --reload  
+Ejecutar la con "streamlit run nlp-front.py"   
 
 ## Metricas del Modelo 👾
-![LOGOTIPO](https://drive.google.com/file/d/1Gp-Q_X-zYn4RGVajlfLBgYff69fcKtCW/view?usp=sharing)
+![matriz](https://user-images.githubusercontent.com/97572313/207034320-a3d3f0d9-a55f-43c9-9741-15b61a044f79.png)
 
 overfitting: 0.24 %
 
@@ -29,7 +29,7 @@ Jonnathan Ospina (Developer) 👨‍💻 🇨🇴
 
 ## Tecnologías Utilizadas 🛠
 
-Metodologia Scrum: Trello
-Desarrollo : Git y GitHub, Google Colab, Streamlit, sklearn, youtube Data Api, FastApi, AutoML, Numpy, Pandas; Seaborn.
-Presentacion: Canvas
+Metodologia Scrum: Trello  
+Desarrollo : Git y GitHub, Google Colab, Streamlit, sklearn, youtube Data Api, FastApi, AutoML, Numpy, Pandas; Seaborn.  
+Presentacion: Canvas  
 
