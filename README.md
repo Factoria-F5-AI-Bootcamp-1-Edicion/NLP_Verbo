@@ -10,9 +10,9 @@
 Proyecto de NLP para analizar comentarios de Youtube y verificar si contienen mensajes de odio 📡 💣, utilizando el algoritmo xgboost de Machine Learning sobre una API y un FRONT en Streamlit.
 
 ## Instalación  💻 
-Instalar los requiremenst.txt  
-Correr la API con "uvicorn api:app --reload"
-Ejecutar con "streamlit run nlp-front.py"   
+-Instalar los requiremenst.txt    
+-Correr la API con "uvicorn api:app --reload"  
+-Ejecutar con "streamlit run nlp-front.py"   
 
 ## Métricas del Modelo 👾
 
