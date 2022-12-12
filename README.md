@@ -4,32 +4,34 @@
 
 ## Introducción 🔮
 
-proyecto de NLP para analizar comentarios de youtube y verificar si contienen mensajes de odio 📡 💣 utilizando un el modelo xgboost de machine learning sobre una API y un FRONT en Streamlit.
+Proyecto de NLP para analizar comentarios de Youtube y verificar si contienen mensajes de odio 📡 💣, utilizando el algoritmo xgboost de Machine Learning sobre una API y un FRONT en Streamlit.
 
 ## Instalación  💻 
-Instalar el requiremenst.txt  
-Correr la API con uvicorn api:app --reload  
-Ejecutar la con "streamlit run nlp-front.py"   
+Instalar los requiremenst.txt  
+Correr la API con "uvicorn api:app --reload"
+Ejecutar con "streamlit run nlp-front.py"   
 
-## Metricas del Modelo 👾
+## Métricas del Modelo 👾
 ![matriz](https://user-images.githubusercontent.com/97572313/207034320-a3d3f0d9-a55f-43c9-9741-15b61a044f79.png)
 
 overfitting: 0.24 %
 
 ## Vista de la APP 📲
 
+<img width="1306" alt="Streamlit" src="https://user-images.githubusercontent.com/97572313/207042098-29eec8e1-9fcc-4a3d-8b2c-74cd847d639f.png">
+
 ## Equipo del Proyecto 🤖
 
-Ana de Cordoba (Developer) 👩‍💻 🇪🇦  
-Celeste Lopez (Developer) 👩‍💻 🇬🇹  
 David García (Product Owner-Developer) 👨‍💻 🇻🇪  
 Andrea Sandoval (Scrum Master-Developer) 👩‍💻 🇵🇪  
+Ana de Córdoba (Developer) 👩‍💻 🇪🇦  
+Celeste López (Developer) 👩‍💻 🇬🇹  
 Jonnathan Ospina (Developer) 👨‍💻 🇨🇴  
 
 
 ## Tecnologías Utilizadas 🛠
 
-Metodologia Scrum: Trello  
-Desarrollo : Git y GitHub, Google Colab, Streamlit, sklearn, youtube Data Api, FastApi, AutoML, Numpy, Pandas; Seaborn.  
-Presentacion: Canvas  
+  Metodología Scrum: <a href="https://discord.com/channels/1045324348984148008/1045324348984148011/1051830796144619520"> Trello</a>.  
+Desarrollo : Git y GitHub, Google Colab, Streamlit, Scikit-learn, Youtube Data Api, FastApi, AutoML, Spacy, NLTK, Numpy, Pandas, Seaborn, Request.  
+Presentación: Canva.  
 
