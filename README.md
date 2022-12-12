@@ -12,15 +12,15 @@ proyecto de NLP para analizar comentarios de youtube y verificar si contienen me
 ## Metricas del Modelo 👾
 
 
-## vista de la APP 📲
+## Vista de la APP 📲
 
 ## Equipo del Proyecto 🤖
 
-Ana de Cordoba (Product Owner - Developer) 👩‍💻 🇪🇦
-Celeste Lopez (Scrum MAster - Developer) 👩‍💻 🇬🇹
-David García (Developer) 👨‍💻 🇻🇪
-Andrea Sandoval (Developer) 👩‍💻 🇵🇪
-Jonnathan Ospina (Developer) 👨‍💻 🇨🇴
+Ana de Cordoba (Developer) 👩‍💻 🇪🇦  
+Celeste Lopez (Developer) 👩‍💻 🇬🇹  
+David García (Product Owner-Developer) 👨‍💻 🇻🇪  
+Andrea Sandoval (Scrum Master-Developer) 👩‍💻 🇵🇪  
+Jonnathan Ospina (Developer) 👨‍💻 🇨🇴  
 
 
 ## Tecnologías Utilizadas 🛠
