@@ -47,5 +47,4 @@ Proyecto de NLP para analizar comentarios de Youtube y verificar si contienen me
   Metodología Scrum: <a href="https://trello.com/b/3W4vUc2Z/verbo"> Trello</a>.  
 Desarrollo : Git y GitHub, Google Colab, Streamlit, Scikit-learn, Youtube Data Api, FastApi, AutoML, Spacy, NLTK, Numpy, Pandas, Seaborn, Request.  
 Presentación: Canva.  
->>>>>>> 825ba207191ffa04fd2287d88d295f1a75a9357e
 
