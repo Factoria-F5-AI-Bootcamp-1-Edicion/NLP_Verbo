@@ -39,7 +39,7 @@ Jonnathan Ospina (Developer) 👨‍💻 🇨🇴
 
 ## Tecnologías Utilizadas 🛠
 
-  Metodología Scrum: <a href="https://discord.com/channels/1045324348984148008/1045324348984148011/1051830796144619520"> Trello</a>.  
+  Metodología Scrum: <a href="https://trello.com/b/3W4vUc2Z/verbo"> Trello</a>.  
 Desarrollo : Git y GitHub, Google Colab, Streamlit, Scikit-learn, Youtube Data Api, FastApi, AutoML, Spacy, NLTK, Numpy, Pandas, Seaborn, Request.  
 Presentación: Canva.  
 
